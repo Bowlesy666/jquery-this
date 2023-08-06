@@ -28,9 +28,9 @@ $(document).ready(function() {
          * When we click on an element that has
          * a 'box class, this event will be fired         
          */
-        var classNames = $(this).attr('class').split(' ');
+        var classNames = $(this).attr('class').split(' '); // this splits into two parts for 'this' ie 'box one' = ['box', 'one']
         var boxClass = classNames[0];  // gets all with box class
-        var className = classNames[1]; // gets all with box and one/two/three
+        var className = classNames[1]; // gets all with box and one/two/three because of split() above
         if ($(this).css('background-color') == 'rgb(255, 0, 0)') {
             // if this object is already red, turn black
             $('.' + classNames[1]).css('background-color', '#000');
