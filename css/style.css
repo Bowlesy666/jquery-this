@@ -1,4 +1,4 @@
-#container {
+.container {
     display: flex;
     flex-flow: row wrap;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
     max-width: 1050px;
 }
 
-.card {
+.box, .card {
     flex: 1; /* makes contents controllable with flexbox */
     display: flex;
     flex-flow: column;
@@ -23,4 +23,9 @@
 
 .makeBlue {
     background-color: blue;
+}
+
+.box {
+    max-height: 15px;
+    background-color: #000;
 }
